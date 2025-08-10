@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           cache: npm
-          node-version: 18
+          node-version: 22
       - run: npm i semantic-release @semantic-release/commit-analyzer @semantic-release/git @semantic-release/release-notes-generator
       - run: npx semantic-release
         env:
